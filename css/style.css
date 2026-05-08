@@ -7,12 +7,13 @@
 @import url('./base/reset.css');
 @import url('./base/variables.css');
 @import url('./base/global.css');
+@import url('./base/footer.css');
 
 
 /* ===== LAYOUT ===== */
 
 @import url('./layout/index.css');
-@import url('./layout/footer.css');
+
 
 
 /* ===== COMPONENTES ===== */

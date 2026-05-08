@@ -1,10 +1,9 @@
-// Pega o botão pelo ID "startBtn" do HTML
-const button = document.getElementById("startBtn");
+export function createButton(selector) {
+  const button = document.querySelector(selector);
 
-// Adiciona um evento de clique no botão
-button.addEventListener("click", () => {
+  button.addEventListener("click", () => {
+    console.log("botão clicado 💫");
+  });
 
-  // Quando clicar, exibe um alerta simples na tela
-  alert("Preparado? Hora da motivação duvidosa ☁️");
-
-});
+  return button;
+}
