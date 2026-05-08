@@ -21,6 +21,8 @@
   --button-hover:
     rgba(160,255,180,0.22);
    --neon-green: #b4f9c3;
+   --decor-white: rgba(255, 255, 255, 0.25); /* Branco bem sutil */
+  --decor-glow: rgba(255, 255, 255, 0.15);  /* Brilho bem fraco */
   /* ===== SOMBRAS ===== */
   --shadow-main:
     0 8px 32px rgba(0,0,0,0.35);
