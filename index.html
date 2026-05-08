@@ -1,105 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Ícone da aba -->
   <link rel="shortcut icon" href="img/index/icon.png" type="image/png">
-
   <title>keep.going()</title>
-
-  <!-- Ícones (Font Awesome) -->
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-
-  <!-- Meus CSS -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   <link href="css/style.css" rel="stylesheet">
-
-
 </head>
-
 <body>
 
-  <!-- Overlay escuro -->
-  <div class="overlay"></div>
+  <svg style="display: none;">
+    <filter id="grainy">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0" />
+      <feBlend mode="multiply" in2="SourceGraphic" />
+    </filter>
+  </svg>
 
-  <!-- Partículas chuva -->
+  <div class="overlay"></div>
   <div class="rain"></div>
 
-  <!-- Conteúdo -->
   <main class="container">
-
+    <svg class="decor-icon cloud-bg" viewBox="0 0 24 24"><path d="M17.5 19c2.5 0 4.5-2 4.5-4.5 0-2.3-1.7-4.2-3.9-4.5-1-2.9-3.8-5-7.1-5-3.9 0-7.2 2.7-7.9 6.4C1.3 12.1 0 13.9 0 16c0 2.8 2.2 5 5 5h12.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+    
     <section class="glass-card">
+      <div class="hero">
+        <h1>keep.going()</h1>
+        <div class="status">
+          <span class="dot"></span>
+          <span class="status-text">online • respirando • tentando</span>
+        </div>
+      </div>
 
-     <div class="hero">
-
-  <h1>keep.going()</h1>
-
-<div class="status">
-  <span class="dot"></span>
-
-  <span class="status-text">
-    online • respirando • tentando
-  </span>
-</div>
-
-</div>
-
-      <h2>404: <span>motivação encontrada</span></h2>
+      <div class="badge-title">
+        <h2>404: <span>motivação encontrada</span></h2>
+      </div>
 
       <p class="description">
-        Motivação de procedência duvidosa,  <br>
+        Motivação de procedência duvidosa, <br> 
         porque terapia ainda tá cara.
       </p>
 
-      <button id="startBtn">
-        Preciso de uma frase agora 
+      <button id="startBtn" class="neon-btn">
+        <span class="btn-text">Preciso de uma frase agora &rarr;</span>
+        <div class="grain-overlay"></div>
       </button>
-     <section class="result" id="result">
-       <p id="phrase"></p>
-       <img id="motivationImg" src="" alt="">
+
+      <section class="result" id="result">
+        <p id="phrase"></p>
+        <img id="motivationImg" src="" alt="">
       </section>
-
     </section>
-
   </main>
-  <!-- camada da chuva -->
-<div class="rain"></div>
 
-<!-- doodles -->
-<div class="cloud cloud1">☁</div>
-<div class="cloud cloud2">☁</div>
-<div class="cloud cloud3">☁</div>
-
-<div class="drops">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-
-<script type="module" src="./js/main.js"></script>
-
- <!-- FOOTER  -->
   <footer>
-
     <div class="footerContainer">
       <div class="socialIcons">
-         <a href="https://www.linkedin.com/in/carolinagarcez"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/CarolinaGarcez"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.instagram.com/mariacarolina.g.a/"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://carolinagarcez.github.io/portfolio/" target="_blank" rel="noopener noreferrer">
-        <i class="fa-solid fa-laptop-code"></i></a>
+        <a href="https://www.linkedin.com/in/carolinagarcez" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/CarolinaGarcez" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/mariacarolina.g.a/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://carolinagarcez.github.io/portfolio/" target="_blank"><i class="fa-solid fa-laptop-code"></i></a>
       </div>
     </div>
-
     <div class="footerBottom">
-      <p> © 2026 - Desenvolvido por <span class="designer">Carolina Garcez</span><br>
-        Sobrevivendo e programando a base de caos e café!
-</p>
+      <p>© 2026 - Desenvolvido por <span class="designer">Carolina Garcez</span><br>
+      Sobrevivendo e programando a base de caos e café!</p>
     </div>
-
   </footer>
+
+  <script type="module" src="./js/main.js"></script>
 </body>
 </html>

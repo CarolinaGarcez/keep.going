@@ -1,22 +1,72 @@
-/* =========================================================
-   CONFIGURAÇÕES GLOBAIS
-========================================================= */
+/* =========================
+   BODY PRINCIPAL DO SITE
+========================= */
 
 body {
 
+  /* altura mínima ocupando toda a tela */
   min-height: 100vh;
+
+  /* layout em coluna */
   display: flex;
   flex-direction: column;
+
+  /* necessário para elementos absolutos internos */
   position: relative;
+
+  /* evita barra horizontal causada por animações */
   overflow-x: hidden;
-background:
+
+
+  /* =========================
+     FUNDO PRINCIPAL
+  ========================= */
+
+  background:
+
+    /* camada escura azulada suave
+       serve para dar clima noturno
+       SEM esconder totalmente a imagem */
     linear-gradient(
-      rgba(0,0,0,0.20),
-      rgba(0,0,0,0.35)
+
+      /* topo mais claro */
+      rgba(25, 35, 55, 0.15),
+
+      /* parte inferior levemente mais escura */
+      rgba(15, 20, 35, 0.25)
+
     ),
+
+    /* imagem principal do fundo */
     url("../../../img/index/bg.png");
 
+
+  /* faz a imagem cobrir toda a tela */
   background-size: cover;
+
+  /* centraliza a imagem */
   background-position: center;
+
+  /* impede repetição da imagem */
+  background-repeat: no-repeat;
+
+  /* cria efeito "parallax"
+     fundo fica parado ao rolar */
+  background-attachment: fixed;
+
+
+  /* =========================
+     MELHORIAS VISUAIS
+  ========================= */
+
+  /* mistura a camada azul com a imagem
+     deixando brilhos e chuva mais visíveis */
+  background-blend-mode: lighten;
+
+  /* aumenta levemente o brilho geral */
+  filter: brightness(1.08);
+
+
+  /* cor padrão dos textos */
   color: var(--text-main);
 }

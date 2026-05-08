@@ -1,5 +1,21 @@
-/* chuva */
-.rain {}
+.rain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
 
-/* animação da chuva */
-@keyframes rainMove {}
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.12) 0px,
+      rgba(255,255,255,0.12) 2px,
+      transparent 2px,
+      transparent 18px
+    );
+
+  background-size: 2px 120px;
+
+  animation: rainMove 0.35s linear infinite;
+
+  opacity: 0.12;
+}

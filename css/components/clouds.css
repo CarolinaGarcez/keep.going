@@ -1,10 +1,130 @@
-/* nuvem base */
-.cloud {}
+/* =========================================
+   ☁️ CLOUDS — keep.going()
+   Nuvens doodle aesthetic do mockup
+========================================= */
 
-/* posições */
-.cloud1 {}
-.cloud2 {}
-.cloud3 {}
 
-/* animação */
-@keyframes float {}
+/* -----------------------------------------
+   Estrutura principal da nuvem
+----------------------------------------- */
+.cloud {
+
+  /* permite posicionar livremente */
+  position: absolute;
+
+  /* largura do corpo da nuvem */
+  width: 120px;
+
+  /* altura do corpo */
+  height: 42px;
+
+  /* contorno branco suave */
+  border: 2px solid rgba(255,255,255,0.7);
+
+  /* arredonda o corpo */
+  border-radius: 100px;
+
+  /* transparente por dentro */
+  background: transparent;
+
+  /* deixa mais suave/menos forte */
+  opacity: 0.5;
+
+  /* corta a parte de baixo dos círculos */
+  clip-path: inset(-100px 0 12px 0);
+
+  /* mistura melhor com o fundo */
+  mix-blend-mode: screen;
+}
+
+
+/* =========================================
+   ☁️ BOLHA ESQUERDA
+========================================= */
+.cloud::before {
+
+  /* obrigatório para pseudo-elemento existir */
+  content: "";
+
+  /* posicionamento independente */
+  position: absolute;
+
+  /* tamanho da bolha */
+  width: 45px;
+  height: 45px;
+
+  /* contorno */
+  border: 2px solid rgba(255,255,255,0.7);
+
+  /* transforma em círculo */
+  border-radius: 50%;
+
+  /* transparente */
+  background: transparent;
+
+  /* sobe a bolha */
+  top: -25px;
+
+  /* posição horizontal */
+  left: 12px;
+}
+
+
+/* =========================================
+   ☁️ BOLHA DIREITA
+========================================= */
+.cloud::after {
+
+  content: "";
+  position: absolute;
+
+  /* maior que a esquerda */
+  width: 60px;
+  height: 60px;
+
+  border: 2px solid rgba(255,255,255,0.7);
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  /* sobe mais */
+  top: -38px;
+
+  /* posição direita */
+  right: 12px;
+}
+
+
+/* =========================================
+   ☁️ POSIÇÕES DAS NUVENS
+========================================= */
+
+
+/* nuvem superior esquerda */
+.cloud1 {
+
+  top: 12%;
+  left: 8%;
+
+  /* tamanho menor */
+  transform: scale(0.8);
+}
+
+
+/* nuvem superior direita */
+.cloud2 {
+
+  top: 24%;
+  right: 10%;
+}
+
+
+/* nuvem inferior esquerda */
+.cloud3 {
+
+  bottom: 18%;
+  left: 15%;
+
+  transform: scale(0.7);
+}
