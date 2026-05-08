@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Ícone da aba -->
-  <link rel="shortcut icon" href="img/index/icon.png">
+  <link rel="shortcut icon" href="img/index/icon.png" type="image/png">
 
   <title>keep.going()</title>
 
@@ -15,10 +15,8 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
   <!-- Meus CSS -->
-  <link href="css/base/padrao.css" rel="stylesheet">
-  <link href="css/pages/index.css" rel="stylesheet">
-  <link href="css/base/footer.css" rel="stylesheet">
-  <link href="css/pages/result.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
 
 </head>
 
@@ -36,8 +34,11 @@
     <section class="glass-card">
 
       <h1>keep.going()</h1>
+    <div class="status">
+     online • respirando • tentando
+    </div>
 
-      <h2>404: motivação encontrada</h2>
+      <h2>404: <span>motivação encontrada</span></h2>
 
       <p class="description">
         Motivação de procedência duvidosa,  <br>
@@ -47,19 +48,19 @@
       <button id="startBtn">
         Preciso de uma frase agora 
       </button>
-      <div class="result" id="result">
+     <section class="result" id="result">
        <p id="phrase"></p>
        <img id="motivationImg" src="" alt="">
-</div>
+      </section>
 
     </section>
 
   </main>
 
-  <script src="js/script.js"></script>
-  <script src="js/data/data-frases.js"></script>
-  <script src="js/data/data-img.js"></script>
-  <script src="js/result.js"></script>
+<script src="js/data/data-frases.js"></script>
+<script src="js/data/data-img.js"></script>
+<script src="js/button.js"></script>
+<script src="js/result.js"></script>
 
  <!-- FOOTER  -->
   <footer>

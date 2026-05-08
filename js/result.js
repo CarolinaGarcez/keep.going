@@ -3,7 +3,7 @@ const btn = document.getElementById("startBtn");
 
 // Elementos
 const phrase = document.getElementById("phrase");
-const img = document.getElementById("motivationImg");
+// const img = document.getElementById("motivationImg");
 const result = document.getElementById("result");
 
 // Evento 
@@ -14,7 +14,7 @@ btn.addEventListener("click", () => {
   const randomPhrase = frases[Math.floor(Math.random() * frases.length)];
 
   // Escolhe uma imagem aleatória da lista
-  const randomImg = imagens[Math.floor(Math.random() * imagens.length)];
+  // const randomImg = imagens[Math.floor(Math.random() * imagens.length)];
 
   // Insere a frase 
   phrase.textContent = randomPhrase;

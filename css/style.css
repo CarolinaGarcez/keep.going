@@ -1,0 +1,32 @@
+/* =========================================================
+   IMPORTAÇÃO DOS ARQUIVOS CSS
+========================================================= */
+
+/* ===== BASE ===== */
+
+@import url('./base/reset.css');
+@import url('./base/variables.css');
+@import url('./base/global.css');
+
+
+/* ===== LAYOUT ===== */
+
+@import url('./layout/index.css');
+@import url('./layout/footer.css');
+
+
+/* ===== COMPONENTES ===== */
+
+@import url('./components/buttons.css');
+@import url('./components/cards.css');
+@import url('./components/text.css');
+@import url('./components/overlay.css');
+@import url('./components/animations.css');
+
+/* ===== FOOTER ===== */
+@import url('./base/footer.css');
+
+/* ===== RESPONSIVIDADE ===== */
+
+@import url('./responsive/responsive.css');
+

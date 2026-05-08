@@ -1,0 +1,16 @@
+/* =========================================================
+   CONFIGURAÇÕES GLOBAIS
+========================================================= */
+
+body {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+  background:
+    url('../../img/index/bg.png')
+    center center / cover no-repeat;
+  color: var(--text-main);
+}
