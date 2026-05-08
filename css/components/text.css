@@ -41,27 +41,33 @@ h2 {
 
 .status {
 
-  display: inline-block;
-  padding:
-    8px
-    16px;
-  margin-bottom: 25px;
-  border-radius: 999px;
-  background:
-    rgba(255,255,255,0.05);
-  border:
-    1px solid rgba(180,255,200,0.15);
-  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
   font-size: 14px;
-  font-weight: 400;
   letter-spacing: 1px;
   color:
-    rgba(220,255,230,0.75);
-  text-transform: lowercase;
-  box-shadow:
-    0 0 15px rgba(170,255,190,0.08);
+    rgba(230,255,240,0.72);
+  animation:
+    fadeStatus 4s ease-in-out infinite;
 }
+.status-text {
+  transition: opacity 0.4s ease-in-out;
+}
+.dot {
 
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background:
+    #b8ffcb;
+  box-shadow:
+    0 0 12px #b8ffcb;
+  animation:
+    pulse 2s infinite;
+}
 /* =========================================================
    TEXTO DESCRITIVO
 ========================================================= */
