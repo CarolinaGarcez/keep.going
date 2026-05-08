@@ -6,7 +6,9 @@ h1 {
 
   font-size: 64px;
   font-weight: 500;
+  font-family: 'JetBrains Mono', monospace;
   margin-bottom: 20px;
+  letter-spacing: -2px;
   color: #d9ffe3;
   text-shadow:
     0 0 10px rgba(170,255,190,0.35),
@@ -31,8 +33,20 @@ h2 {
   font-size: 24px;
   font-weight: 400;
   letter-spacing: 1px;
+  font-family: 'JetBrains Mono', monospace;
   color:
     var(--text-soft);
+}
+
+/* --- BADGE 404 --- */
+.badge-title h2 {
+  display: inline-block;
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 30px 0;
 }
 
 /* =========================================================
@@ -48,6 +62,7 @@ h2 {
   margin-bottom: 40px;
   font-size: 14px;
   letter-spacing: 1px;
+  font-family: 'JetBrains Mono', monospace; 
   color:
     rgba(230,255,240,0.72);
   animation:
@@ -58,25 +73,19 @@ h2 {
 }
 .dot {
 
-  width: 8px;
-  height: 8px;
+width: 6px;
+  height: 6px;
+  background: var(--neon-green);
   border-radius: 50%;
-  background:
-    #b8ffcb;
-  box-shadow:
-    0 0 12px #b8ffcb;
-  animation:
-    pulse 2s infinite;
+  box-shadow: 0 0 10px var(--neon-green);
 }
+
 /* =========================================================
    TEXTO DESCRITIVO
 ========================================================= */
 
 .description {
-
-  font-size: 20px;
-  line-height: 1.8;
-  margin-bottom: 70px;
-  color:
-    var(--text-description);
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin-bottom: 40px;
 }

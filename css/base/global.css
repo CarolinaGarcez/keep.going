@@ -1,6 +1,3 @@
-/* =========================
-   BODY PRINCIPAL DO SITE
-========================= */
 
 body {
 
@@ -54,10 +51,6 @@ body {
      fundo fica parado ao rolar */
   background-attachment: fixed;
 
-
-  /* =========================
-     MELHORIAS VISUAIS
-  ========================= */
 
   /* mistura a camada azul com a imagem
      deixando brilhos e chuva mais visíveis */

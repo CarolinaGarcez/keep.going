@@ -11,20 +11,24 @@
 </head>
 <body>
 
-  <svg style="display: none;">
-    <filter id="grainy">
-      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" stitchTiles="stitch" />
-      <feColorMatrix type="saturate" values="0" />
-      <feBlend mode="multiply" in2="SourceGraphic" />
-    </filter>
-  </svg>
-
   <div class="overlay"></div>
   <div class="rain"></div>
 
   <main class="container">
-    <svg class="decor-icon cloud-bg" viewBox="0 0 24 24"><path d="M17.5 19c2.5 0 4.5-2 4.5-4.5 0-2.3-1.7-4.2-3.9-4.5-1-2.9-3.8-5-7.1-5-3.9 0-7.2 2.7-7.9 6.4C1.3 12.1 0 13.9 0 16c0 2.8 2.2 5 5 5h12.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-    
+  
+
+<div class="star pos-star-1">✦</div>
+<div class="star pos-star-2">✦</div>
+<div class="star pos-star-3">✦</div> 
+<div class="star pos-star-4">✦</div>
+<div class="star pos-star-5">✦</div>
+<div class="star pos-star-6">✦</div> 
+<div class="star pos-star-7">✦</div> 
+<div class="star pos-star-8">✦</div>
+<div class="star pos-star-9">✦</div>
+<div class="star pos-star-10">✦</div> 
+
+
     <section class="glass-card">
       <div class="hero">
         <h1>keep.going()</h1>
@@ -38,13 +42,20 @@
         <h2>404: <span>motivação encontrada</span></h2>
       </div>
 
-      <p class="description">
-        Motivação de procedência duvidosa, <br> 
-        porque terapia ainda tá cara.
-      </p>
+      <div class="description-wrapper">
+        <i class="fa-solid fa-cloud small-decor"></i>
+        <p class="description">
+          Motivação de procedência duvidosa,  <br> 
+          porque terapia ainda tá cara.
+        </p>
+      </div>
 
       <button id="startBtn" class="neon-btn">
-        <span class="btn-text">Preciso de uma frase agora &rarr;</span>
+        <div class="btn-content">
+         
+          <span class="btn-text">Preciso de uma Frase Agora</span>
+          <span class="arrow">&rarr;</span>
+        </div>
         <div class="grain-overlay"></div>
       </button>
 

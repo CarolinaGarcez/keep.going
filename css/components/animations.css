@@ -43,21 +43,19 @@
       translateY(0);
   }
 }
-@keyframes rainMove {
-  0% {
-    transform: translateY(-100%);
-  }
-
-  100% {
-    transform: translateY(100%);
-  }
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.9); }
+  50% { opacity: 0.9; transform: scale(1.1); }
 }
-@keyframes rainMove {
-  from {
-    background-position: 0 0;
-  }
 
-  to {
-    background-position: 0 100px;
-  }
-}
+/* Faz com que cada estrela comece a brilhar em tempos diferentes */
+.pos-star-1 { animation-delay: 0s; }
+.pos-star-2 { animation-delay: 1s; }
+.pos-star-3 { animation-delay: 2.5s; }
+.pos-star-4 { animation-delay: 1.5s; }
+.pos-star-5 { animation-delay: 0.5s; }
+.pos-star-6 { animation-delay: 2s; }
+.pos-star-7 { animation-delay: 1s; }
+.pos-star-8 { animation-delay: 3s; }
+.pos-star-9 { animation-delay: 0.5s; }
+.pos-star-10 { animation-delay: 2.5s; }
