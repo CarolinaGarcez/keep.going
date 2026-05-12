@@ -53,14 +53,22 @@ export const frases = {
   ]
 };
 
-// 🎲 função de frase aleatória por categoria
-export function getFrase(categoria) {
-  const lista = frases[categoria];
+// função
+export function getFraseAleatoria() {
 
-  if (!lista) {
-    return "Categoria não encontrada.";
-  }
+  // pega todas categorias
+  const categorias = Object.keys(frases);
 
-  const randomIndex = Math.floor(Math.random() * lista.length);
-  return lista[randomIndex];
+  // escolhe categoria aleatória
+  const categoriaRandom =
+    categorias[Math.floor(Math.random() * categorias.length)];
+
+  // pega lista da categoria
+  const lista = frases[categoriaRandom];
+
+  // escolhe frase aleatória
+  const frase =
+    lista[Math.floor(Math.random() * lista.length)];
+
+  return frase;
 }
