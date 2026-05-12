@@ -85,9 +85,18 @@ width: 6px;
 ========================================================= */
 
 .description {
-  color: var(--text-dim);
-  line-height: 1.6;
-  margin-bottom: 40px;
+
+  max-width: 520px;
+
+  margin:
+    0 auto 40px;
+
+  color:
+    rgba(240,248,245,0.78);
+
+  line-height: 1.8;
+
   font-size: 20px;
+
   font-weight: 300;
 }
