@@ -21,19 +21,6 @@ body {
 
   background:
 
-    /* camada escura azulada suave
-       serve para dar clima noturno
-       SEM esconder totalmente a imagem */
-    linear-gradient(
-
-      /* topo mais claro */
-      rgba(25, 35, 55, 0.15),
-
-      /* parte inferior levemente mais escura */
-      rgba(15, 20, 35, 0.25)
-
-    ),
-
     /* imagem principal do fundo */
     url("../../../img/index/bg.png");
 
@@ -63,3 +50,5 @@ body {
   /* cor padrão dos textos */
   color: var(--text-main);
 }
+
+
