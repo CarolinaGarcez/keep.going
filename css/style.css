@@ -5,9 +5,8 @@
 /* ===== BASE ===== */
 
 @import url('./base/reset.css');
-@import url('./base/variables.css');
 @import url('./base/global.css');
-@import url('./base/footer.css');
+
 
 
 /* ===== LAYOUT ===== */
@@ -21,11 +20,7 @@
 @import url('./components/animations.css');
 @import url('./components/buttons.css');
 @import url('./components/cards.css');
-@import url('./components/stars.css');
-@import url('./components/drops.css');
-@import url('./components/hero.css');
 @import url('./components/icons.css');
-@import url('./components/overlay.css');
 @import url('./components/text.css');
 
 
